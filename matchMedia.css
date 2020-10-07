@@ -1,0 +1,16 @@
+/* EXAMPLE: Then we can design our grid to shift column template
+* depending on our breakpoint class on the body element */
+
+#grid {
+  display: grid
+}
+
+body.mobile div.grid {
+  grid-template-columns: 1fr;  
+}
+body.tablet div.grid {
+  grid-template-columns: 1fr 1fr 1fr;  
+}
+body.desktop div.grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+}
